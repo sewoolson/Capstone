@@ -1,4 +1,4 @@
 export default {
-  header: "Order a pizza!",
-  view: "Order"
+  header: "Questions Page",
+  view: "Questions"
 };

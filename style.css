@@ -23,11 +23,22 @@
   text-decoration: none;
   margin: 5px;
   align-items: start;
+  color: #BC7FBF;
+
 }
 
-.topnav a .active {
+.topnav a:active {
+  color: #BC7FBF;
+  font-style: oblique;
+  font-family: ;
   text-decoration: underline;
 }
+
+.topnav a:hover {
+  color: #E4B3E7;
+  font-style: italic;
+}
+
 .side-nav {
   width: 250px;
   height: 100%;
@@ -62,7 +73,7 @@
 .nav-links li a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 14px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
 }
@@ -102,7 +113,7 @@
 }
 
 .nav-links li:nth-child(2):hover ~ .active{
-  top: 19.2%;
+  top: 20.6%;
 }
 
 .nav-links li:nth-child(3):hover ~ .active{
@@ -150,5 +161,6 @@
   }
   .nav-links li a {
     justify-content: center;
+    color:
   }
 }

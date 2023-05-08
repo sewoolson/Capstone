@@ -1,4 +1,4 @@
-export { default as home} from "./index";
-export { default as services } from "./services";
-export { default as community} from "./community";
-export { default as questions} from "./questions";
+export { default as Home} from "./Home";
+export { default as Services } from "./Services";
+export { default as Community} from "./Community";
+export { default as Questions} from "./Questions";
