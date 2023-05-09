@@ -21,13 +21,13 @@ export default (links) => html`
         <img src="assets/TFH-logo.png" class="logo-img">
         <img src="assets/TFH-mono-logo.png" class="logo-icon">
       </a>
-      <ul class="nav-links">
+      <!-- <ul class="nav-links">
         <li><a href="index.html"><p><i class="fa-solid fa-house" style="color: #bc7fbf;"></i>Home</p></a></li>
         <li><a href="services.html"><p><i class="fa-solid fa-hand-holding-medical" style="color: #bc7fbf;"></i>Services</p></a></li>
         <li><a href="community.html"><p><i class="fa-solid fa-handshake" style="color: #bc7fbf;"></i>Community</p></a></li>
         <li><a href="questions.html"><p><i class="fa-solid fa-question" style="color: #bc7fbf;"></i>Q&A</p></a></li>
         <li><a href="about.html"><p><i class="fa-solid fa-circle-info" style="color: #bc7fbf;"></i>About</p></a></li>
-      </ul>
+      </ul> -->
     </div>
     </div><!--end side-nav div-->
   </nav>

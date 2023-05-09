@@ -5,7 +5,7 @@
   font-family: 'Assistant', sans-serif;
 }
 
-.header {
+/* .header {
   width: 100%;
   height: 100vh;
   background: #1D193A;
@@ -76,10 +76,10 @@
   padding: 5px 10px;
   display: flex;
   align-items: center;
-}
+} */
 /* double check the padding since it added too much space */
 
-.nav-links li a i {
+/* .nav-links li a i {
   font-size: 22px;
   margin-right: 20px;
 
@@ -130,7 +130,7 @@
 
 .nav-links li:nth-child(5):hover ~ .active{
   top: 85.6%;
-}
+} */
 
 .logo-icon {
   display: none;
