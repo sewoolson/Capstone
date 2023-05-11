@@ -14,13 +14,6 @@ export default (links) => html`
             `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`
         )
         .join("")}
-
-        </ul>
-    <div class="side-nav">
-      <a href="#" class="logo">
-        <img src="assets/TFH-logo.png" class="logo-img">
-        <img src="assets/TFH-mono-logo.png" class="logo-icon">
-      </a>
-
+    </ul>
   </nav>
 `;

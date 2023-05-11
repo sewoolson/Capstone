@@ -8,7 +8,23 @@ export default () => html`
 <!-- about section ends here -->
 <section id="contact">
   <h3>Curios about something? Please fill out the form below.</h3>
-<p>insert contact form here</p>
+  <form
+  action="https://formspree.io/f/mbjebjaz"
+  method="POST"
+>
+  <label>
+    Name:
+  <input type="name" name="name">
+    Email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit" id="button">Send</button>
+</form>
 </section>
 <!-- contact section ends here -->
 `;

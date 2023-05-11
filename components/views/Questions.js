@@ -1,18 +1,28 @@
 import html from "html-literal";
 
 export default() => html`
-<div class="header">
-    <div class="nav-links">
-      <input type="text" class="search" placeholder="Search.."><br>
-      <a class="active" href="#therapy">Therapy</a>
-      <a href="#hrt">HRT</a>
-      <a href="#surgery">Gender Affirming Surgeries</a>
-      <a href="supportgroups">Support Groups</a>
-    </div><!--end header div-->
+<section id="sidenav">
+      <a href="#commonFAQ">FAQs</a>
+      <a href="#support">Support</a>
+</section><!-- end sidenav -->
 <section id="questions">
-  <form id="question" method="POST" action="">
-    <input type="submit" name="submit" value="Submit"/>
+<form id="questionsform"
+  action="https://formspree.io/f/mbjebjaz"
+  method="POST"
+>
+  <label>
+    Name:
+  <input type="name" name="name">
+    Email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit" id="button">Send</button>
 </form>
-</section>
+</section><!-- end form section -->
 `;
 //add form to this page

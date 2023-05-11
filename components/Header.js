@@ -1,10 +1,13 @@
 import html from "html-literal";
+import logo from "../../Capstone/assets/TFH-logo.png"
 
 export default () => html`
-<header>
-<a href="#" class="logo">
-        <img src="/Users/samw/Code/SavvyCoders/Capstone/assets/TFH-logo.png" class="logo-img">
-        <img src="/TFH-mono-logo.cc3e7ab5.png" class="logo-icon">
-      </a>
-</header>
+<section id="header">
+<img src="${logo}" alt="transform-health-logo">
+</section><!-- end header section -->
+
+<section id="searchbar">
+<input type="text" class="search" placeholder="Search.."><br>
+</section><!-- end searchbar section -->
+
 `;
