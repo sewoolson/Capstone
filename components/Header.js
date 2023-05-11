@@ -1,5 +1,5 @@
 import html from "html-literal";
-import logo from "../../Capstone/assets/TFH-logo.png"
+import logo from "../assets/TFH-logo.png"
 
 export default () => html`
 <section id="header">
