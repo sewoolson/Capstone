@@ -6,11 +6,8 @@ const app = express();
 
 dotenv.config();
 
-app.get("/status", (request, response) => {
-  response.send(JSON.stringify({ message: "Service healthy" }));
-});
+const PORT = process.env.PORT || 4040; // we use || to provide a default value
 
-app.listen(4040, () => console.log("Listening on port 4040"));
 
 //Logging Middleware
 const logging = (request, response, next) => {
@@ -36,3 +33,8 @@ app.use(cors);
 app.use(express.json());
 app.use(logging);
 
+app.get("/status", (request, response) => {
+  response.send(JSON.stringify({ message: "Service healthy" }));
+});
+
+app.listen(4040, () => console.log("Listening on port 4040"));
