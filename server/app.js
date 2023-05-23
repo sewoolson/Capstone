@@ -1,10 +1,22 @@
 // 'Import' the http module
 const express = require("express");
 const dotenv = require("dotenv");
+const mongoose = require('mongoose')
+
 // Initialize the Express application
 const app = express();
 
 dotenv.config();
+
+mongoose.connect(process.env.MONGODB);
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Connection Error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
+
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 
@@ -35,6 +47,31 @@ app.use(logging);
 
 app.get("/status", (request, response) => {
   response.send(JSON.stringify({ message: "Service healthy" }));
+});
+
+app.get("/weather/:city", (request, response) => {
+  // Express adds a "params" Object to requests that has an matches parameter created using the colon syntax
+  const city = request.params.city;
+  const apiKey = request.query.apikey;
+  // Generate a random number to use as the temperature
+  // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#getting_a_random_integer_between_two_values_inclusive
+  const min = 70;
+  const max = 90;
+  const temp = Math.floor(Math.random() * (max - min + 1) + min);
+  // handle GET request for weather with an route parameter of "city"
+  response.status(418).json({
+    current: `The weather in ${city} is ${temp} degrees today.`,
+    apikey: apiKey
+  });
+});
+
+app.post("/add", (request, response) => {
+  const num1 = request.body.numberOne;
+  const num2 = request.body.numberTwo;
+  const responseBody = {
+    sum: num1 + num2
+  };
+  response.json(responseBody);
 });
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
