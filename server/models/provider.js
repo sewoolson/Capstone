@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+mongoose = require("mongoose");
 
-//recommend a provider form
+//start recommend a provider form
 let providerSchema = new mongoose.Schema({
 providerName:{
   type: String,
