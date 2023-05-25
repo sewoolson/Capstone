@@ -1,6 +1,6 @@
 //start contact form
 const Router = require("express")
-const Contact = required("../models/contact")
+const Contact = required("../models/Contact")
 const router = Router()
 
 router.post("/", (request, response) => {

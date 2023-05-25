@@ -1,7 +1,7 @@
 mongoose = require("mongoose");
 
 //start question form
-let providerSchema = new mongoose.Schema({
+let questionSchema = new mongoose.Schema({
 userName:{
   type: String,
   required: true,

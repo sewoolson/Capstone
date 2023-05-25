@@ -1,6 +1,6 @@
 //start question form
 const Router = require("express")
-const Question = required("../models/question")
+const Question = required("../models/Question")
 const router = Router()
 
 router.post("/", (request, response) => {
