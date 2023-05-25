@@ -3,9 +3,9 @@ const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require('mongoose')
 const axios = require("axios");
-const Contact = require("./models/contact");
-const Provider = require("./models/provider");
-const Question = require("./models/question");
+const Contact = require("./models/Contact");
+const Provider = require("./models/Provider");
+const Question = require("./models/Question");
 // Initialize the Express application
 const app = express();
 
