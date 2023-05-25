@@ -1,30 +1,25 @@
 mongoose = require("mongoose");
 
-//start recommend a provider form
+//start question form
 let providerSchema = new mongoose.Schema({
-providerName:{
+userName:{
   type: String,
   required: true,
   validate: /^[A-Za-z ]*$/
 },
-location:{
+userEmail:{
   type: String,
   required: true,
   validate: /^[A-Za-z ]*$/
 },
-serviceType:{
+userMessage:{
   type: String,
   required: true,
-  validate: /^[A-Za-z ]*$/
-},
-userReview:{
-  type: String,
-  required: false,
   validate: /^[A-Za-z ]*$/
 },
 })
 
-const Provider = mongoose.model("provider", providerSchema)
-module.exports = Provider
+const Question = mongoose.model("question", questionSchema)
+module.exports = Question
 
-//end recommend provider form
+//end question form

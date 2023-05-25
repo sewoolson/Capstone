@@ -2,7 +2,10 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require('mongoose')
-
+const axios = require("axios");
+const Contact = require("./models/contact");
+const Provider = require("./models/provider");
+const Question = require("./models/question");
 // Initialize the Express application
 const app = express();
 
@@ -73,5 +76,8 @@ app.post("/add", (request, response) => {
   };
   response.json(responseBody);
 });
+app.use("/contacts", Contact);
+app.use("/providers", Provider);
+app.use("/questions", Question);
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

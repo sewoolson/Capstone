@@ -1,11 +1,11 @@
-//start recommend provider form
+//start contact form
 const Router = require("express")
-const Provider = required("../models/provider")
+const Contact = required("../models/contact")
 const router = Router()
 
 router.post("/", (request, response) => {
-  const newProvider = new Provider(request.body)
-  newProvider.save((error, record)=> {
+  const newContact = new Contact(request.body)
+  newContact.save((error, record)=> {
     if (error?.name === "validate error")
       return response.status(400).json(error.errors);
       if (error) return response.status(500).json(error.errors);
@@ -18,7 +18,7 @@ router.post("/", (request, response) => {
 
 // Get (read) all records from the collection
 router.get("/", (request, response)=> {
-  Provider.find({}, (error, record)=> {
+  Contact.find({}, (error, record)=> {
     if (error) return response.status(500).json(error.errors);
 
     response.json(record);
@@ -27,7 +27,7 @@ router.get("/", (request, response)=> {
 })
 // Get a single record by ID using a query parameter
 router.get("/:id", (request, response) => {
-  Provider.findById(request.params.id, (error, record) => {
+  Contact.findById(request.params.id, (error, record) => {
     if (error) return response.status(500).json(error.errors);
 
     response.json(record);
@@ -35,7 +35,7 @@ router.get("/:id", (request, response) => {
 });
 
 router.delete("/:id", (request, response) => {
-  Provider.findByIdAndRemove(request.params.id, {}, (error, record) => {
+  Contact.findByIdAndRemove(request.params.id, {}, (error, record) => {
     if (error) return response.status(500).json(error.errors);
 
     response.json(record);
@@ -70,5 +70,4 @@ router.delete("/:id", (request, response) => {
 //   );
 // });
 module.exports = router;
-//end recommend provider form
-
+//end contact form

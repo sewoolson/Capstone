@@ -6,7 +6,7 @@ export default() => html`
       <a href="#support">Support</a>
 </section><!-- end sidenav -->
 <section id="questions">
-<form id="questionsform"
+<form id="questionsForm"
   action="https://formspree.io/f/mbjebjaz"
   method="POST"
 >
