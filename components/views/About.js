@@ -7,7 +7,7 @@ export default () => html`
 </section>
 <!-- about section ends here -->
 <section id="contact">
-  <h3>Curios about something? Please fill out the form below.</h3>
+  <h3>Curious about something? Please fill out the form below.</h3>
   <form
   action="https://formspree.io/f/mbjebjaz"
   method="POST"
