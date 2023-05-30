@@ -6,8 +6,15 @@ export default () => html`
 <img src="${logo}" alt="transform-health-logo">
 </section><!-- end header section -->
 
-<section id="searchbar">
+<!-- <section id="searchbar">
 <input type="text" class="search" placeholder="Search.."><br>
-</section><!-- end searchbar section -->
+</section> end searchbar section -->
+<div class="search">
+            <form action="#">
+                <input type="text"
+                    placeholder=" Whatcha lookin' for?"
+                    name="search">
 
+            </form>
+        </div>
 `;
