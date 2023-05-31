@@ -8,10 +8,7 @@ export default state => html`
       <a href="#surgery">Gender Affirming Surgeries</a>
       <a href="#supportgroups">Support Groups</a>
 
-<form id="provider-recmnd"
-  action=""
-  method="POST"
->
+<form id="provider" action="" method="POST">
   <label>
     Provider Name:
   <input type="name" name="name">
@@ -30,4 +27,4 @@ export default state => html`
 </form>
 </section><!-- end form section -->
 </section><!-- end sidenav -->
-`;
+`
