@@ -21,5 +21,5 @@ export default() => html`
   <button type="submit" id="button">Send</button>
 </form>
 </section><!-- end form section -->
-`
+`;
 //add form to this page

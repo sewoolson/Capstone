@@ -24,4 +24,4 @@ export default () => html`
 </form>
 </section>
 <!-- contact section ends here -->
-`
+`;
