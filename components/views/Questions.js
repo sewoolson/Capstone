@@ -7,7 +7,7 @@ export default() => html`
 </section><!-- end sidenav -->
 <section id="questions">
 <form id="questionsForm"
-  action="https://formspree.io/f/mbjebjaz"
+  action=""
   method="POST"
 >
   <label>

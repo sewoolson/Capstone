@@ -9,7 +9,7 @@ export default state => html`
       <a href="#supportgroups">Support Groups</a>
 
 <form id="provider-recmnd"
-  action="https://formspree.io/f/mbjebjaz"
+  action=""
   method="POST"
 >
   <label>
