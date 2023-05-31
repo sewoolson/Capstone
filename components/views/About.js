@@ -9,7 +9,7 @@ export default () => html`
 <section id="contact">
   <h3>Curious about something? Please fill out the form below.</h3>
   <form
-  action="https://formspree.io/f/mbjebjaz"
+  action=""
   method="POST"
 >
   <label>
