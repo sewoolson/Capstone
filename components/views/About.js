@@ -8,10 +8,7 @@ export default () => html`
 <!-- about section ends here -->
 <section id="contact">
   <h3>Curious about something? Please fill out the form below.</h3>
-  <form
-  action=""
-  method="POST"
->
+  <form id="contact" action="" method="POST">
   <label>
     Name:
   <input type="name" name="name">
@@ -27,4 +24,4 @@ export default () => html`
 </form>
 </section>
 <!-- contact section ends here -->
-`;
+`

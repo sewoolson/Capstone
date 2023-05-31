@@ -6,10 +6,7 @@ export default() => html`
       <a href="#support">Support</a>
 </section><!-- end sidenav -->
 <section id="questions">
-<form id="questionsForm"
-  action=""
-  method="POST"
->
+<form id="questions" action="" method="POST">
   <label>
     Name:
   <input type="name" name="name">
@@ -24,5 +21,5 @@ export default() => html`
   <button type="submit" id="button">Send</button>
 </form>
 </section><!-- end form section -->
-`;
+`
 //add form to this page
