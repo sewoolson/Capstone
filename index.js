@@ -26,7 +26,7 @@ document.querySelector(".fa-bars").addEventListener("click", () => {
   document.querySelector("nav > ul").classList.toggle("hidden--mobile");
 });
 }
-
+//weather map api//
 router.hooks({
   before: (done, params) => {
     const view =
@@ -90,3 +90,20 @@ router
     },
   })
   .resolve();
+//end weathermap api//
+
+
+//start request provider api//
+
+
+//end request provider api//
+
+
+//start question form api//
+
+//end question form api//
+
+
+//start contact form api//
+
+//end contact form api//
