@@ -16,15 +16,47 @@ function render(state = store.Home) {
     ${Footer()}
   `;
 
-afterRender(state);
-router.updatePageLinks();
+  afterRender(state);
+  router.updatePageLinks();
 }
 
 function afterRender(state) {
-//add menu toggle to bars icon in nav bar
-document.querySelector(".fa-bars").addEventListener("click", () => {
-  document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-});
+  console.log(state);
+  //add menu toggle to bars icon in nav bar
+  document.querySelector(".fa-bars").addEventListener("click", () => {
+    document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+  });
+
+  if (state.view === "Services") {
+    console.log("services view rendered");
+    document.querySelector("form").addEventListener("submit", event => {
+      // Prevent the default action aka redirect to the same url using POST method
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      const requestData = {
+        name: inputList.name.value,
+        location: inputList.location.value,
+        service: inputList.service.value,
+        message: inputList.message.value
+
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.SERVICES_API}/providers`, requestData)
+        .then(response => {
+
+          store.Services.services.push(response.data);
+          // router.navigate("/Services");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
 }
 //weather map api//
 router.hooks({
