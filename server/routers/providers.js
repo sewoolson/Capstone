@@ -1,6 +1,6 @@
 //start recommend provider form
 const Router = require("express")
-const Provider = required("../models/Provider")
+const Provider = require("../models/Provider")
 const router = Router()
 
 router.post("/", (request, response) => {
