@@ -93,7 +93,18 @@ router.hooks({
             done();
           });
         break;
-
+          case "Services":
+            axios.get(`${process.env.SERVICES_API}/providers`)
+            .then(response => {
+              console.log(response.data);
+              store.Services.services = response.data;
+              done();
+            })
+            .catch(err => {
+              console.log(err);
+              done();
+            });
+          break;
       default:
         done();
     }

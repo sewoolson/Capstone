@@ -24,4 +24,20 @@ export default state => html`
 
   <input type="submit" id="button" name="submit" value="submit"/>
 </form>
+<table id="services">
+<tr>
+  <th>name</th>
+  <th>location</th>
+  <th>service</th>
+  <th>message</th>
+</tr>
+${state.services
+  .map(service => {
+    return `<tr><td>${service.providerName}</td><td>${service.location}</td><td>${
+      service.serviceType
+    }</td><td>${service.userReview}</td></tr>`;
+  })
+  .join("")}
+
+</table>
 `;
