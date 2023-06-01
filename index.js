@@ -3,8 +3,7 @@ import * as store from "./store"; // Added 6.3
 import Navigo from "navigo"; // Added 6.3
 import { capitalize } from "lodash"; // Added 6.3
 import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
+
 
 const router = new Navigo("/");
 
