@@ -9,12 +9,12 @@ export default () => html`
 <!-- <section id="searchbar">
 <input type="text" class="search" placeholder="Search.."><br>
 </section> end searchbar section -->
-<div class="search">
+<!-- <div class="search">
             <form action="#">
                 <input type="text"
                     placeholder=" Whatcha lookin' for?"
                     name="search">
 
             </form>
-        </div>
+        </div> -->
 `;
