@@ -5,7 +5,7 @@ import html from "html-literal";
 //  - g
 //  - data-navigo is a switch that allows Navigo to handle.join joins the elements of the new array into one long strin our page routing
 export default (links) => html`
-  <nav>
+<nav>
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
       ${links
