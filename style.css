@@ -46,21 +46,22 @@ img {
   color: #87CEEB;
 }
 
-
+/*
 nav {
-
   display: flex;
   align-items:last baseline;
   flex-direction: column;
   padding: 0 60px;
-}
+  color:#BC7FBF;
+  text-decoration: none;
+  list-style-type: none;
+} */
 
 nav > ul > li {
   display: inline-block;
   text-decoration: none;
   padding: 0.5rem;
   justify-content: space-evenly;
-
 }
 
 #searchbar{
@@ -104,6 +105,7 @@ button:hover > a:hover > a:link {
   font-style: italic;
 }
 
+
 nav > .fa-bars {
   display: none;
 }
@@ -111,7 +113,9 @@ nav > .fa-bars {
 @media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
+    text-decoration: none;
   }
+}
 
 @media (min-width: 550px) {
   nav > ul {
