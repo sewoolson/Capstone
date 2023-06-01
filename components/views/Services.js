@@ -7,24 +7,37 @@ export default state => html`
       <a href="#hrt">HRT</a>
       <a href="#surgery">Gender Affirming Surgeries</a>
       <a href="#supportgroups">Support Groups</a>
+</section>
 
-<form id="provider" action="" method="POST">
-  <label>
-    Provider Name:
-  <input type="name" name="name">
-    Provider Location:
-    <input type="location" name="location">
-  </label>
-  Provider Service Type:
-    <input type="service" name="service">
-  </label>
-  <label>
-    Message:
+<form id="provider">
+  <label for="name">Provider Name:</label>
+  <input type="text" name="name" id="name"/>
+
+  <label for="location">Provider Location:</label>
+    <input type="text" name="location" id="location"/>
+
+  <label for="service">Provider Service Type:</label>
+    <input type="text" name="service" id="service"/>
+
+  <label for="message">Message:</label>
     <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit" id="button">Send</button>
+
+  <input type="submit" id="button" name="submit" value="submit"/>
 </form>
-</section><!-- end form section -->
-</section><!-- end sidenav -->
+<table id="services">
+<tr>
+  <th>name</th>
+  <th>location</th>
+  <th>service</th>
+  <th>message</th>
+</tr>
+${state.services
+  .map(service => {
+    return `<tr><td>${service.providerName}</td><td>${service.location}</td><td>${
+      service.serviceType
+    }</td><td>${service.userReview}</td></tr>`;
+  })
+  .join("")}
+
+</table>
 `;
