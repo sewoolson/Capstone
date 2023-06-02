@@ -1,15 +1,19 @@
 /* google fonts import link  */
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,500;0,600;1,100;1,500;1,600&family=Assistant:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,500;0,600;1,100;1,500;1,600&family=Assistant:wght@300;400;500;600&display=swap');
 * {
   margin: 0.5rem;
   padding: 0;
+
+
 }
 
 body {
   color: #fff;
   background-repeat: no-repeat;
-  background-color: #1d193a;
+  background-color: #1D193A;
+
+
 }
 
 img {
@@ -17,33 +21,34 @@ img {
 }
 
 #jumbotron {
+
+
 }
 
-p,
-h6 {
-  font-family: "Assistant", sans-serif;
+p, h6 {
+  font-family: 'Assistant', sans-serif;
 }
 
 #large {
   font-size: 38px;
   display: block;
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
   padding: 0 80px;
 }
 
 #subhead {
   font-size: 20px;
   display: block;
-  font-family: "Archivo", sans-serif;
-  color: #bc7fbf;
+  font-family:'Archivo', sans-serif;;
+  color: #BC7FBF;
   padding: 0 80px;
+
 }
 
-#sidenav a {
-  color: #87ceeb;
-}
+
 
 /* Start Questions Form */
+
 
 #questions {
   max-width: 400px;
@@ -61,7 +66,7 @@ h6 {
 }
 
 #questions h5 {
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
 }
 
 #questions input,
@@ -72,6 +77,7 @@ h6 {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+
 
 /* End questions form */
 
@@ -93,7 +99,7 @@ h6 {
 }
 
 #provider h5 {
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
 }
 
 #provider input,
@@ -124,7 +130,7 @@ h6 {
 }
 
 #contact h5 {
-  font-family: "Archivo", sans-serif;
+  font-family: 'Archivo', sans-serif;
 }
 
 #contact input,
@@ -136,6 +142,7 @@ h6 {
   margin-bottom: 10px;
 }
 /*End contact form */
+
 
 /*Start Community user posts */
 .post-container {
@@ -149,7 +156,7 @@ h6 {
 
 .text-box {
   padding: 10px;
-  background-color: #433e6e;
+  background-color: #433E6E;
   border-radius: 12px;
   position: relative;
   width: auto;
@@ -178,45 +185,45 @@ h6 {
 a {
   text-decoration: none;
   transition: font-style 0.3s;
-  color: #bc7fbf;
-  font-family: "Archivo-medium", sans-serif;
+  color: #BC7FBF;
+  font-family: 'Archivo-medium', sans-serif;
 }
 
 .see-more:hover {
   font-style: italic;
-  color: #e4b3e7;
-  font-family: "Archivo";
+  color: #E4B3E7;
+  font-family: 'Archivo';
   font-style: italic;
   font-weight: 500;
 }
 
 #userName {
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 18px;
-  color: #bc7fbf;
+  color: #BC7FBF;
 }
 
 #date {
-  font-family: "Assistant";
+  font-family: 'Assistant';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #87ceeb;
+  color: #87CEEB;
 }
 
 #title {
-  font-family: "Archivo";
+  font-family: 'Archivo';
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
 }
 
 #userContent {
-  font-family: "Assistant";
+  font-family: 'Assistant';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -237,46 +244,45 @@ a {
   margin-left: 5px;
 }
 
+
+
 /* end community */
 
-nav > ul > li {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.5rem;
-  justify-content: space-evenly;
-}
 
-input[type="text"] {
+
+
+input[type=text] {
   color: #fff;
   width: 30%;
   -webkit-transition: width 0.15s ease-in-out;
   transition: width 0.15s ease-in-out;
 }
 
-input,
-textarea {
-  background-color: #433e6e;
+input, textarea {
+  background-color: #433E6E;
   border-radius: 12px;
   color: #fff;
   border-style: none;
 }
 
 #button {
-  position: relative;
-  background: #bc7fbf;
-  border-style: none;
-  border-radius: 12px;
-  width: 100px;
-  height: 25px;
-  left: 12px;
-  top: 12px;
-  color: #fff;
+position: relative;
+background: #BC7FBF;
+border-style: none;
+border-radius: 12px;
+width: 100px;
+height: 25px;
+left: 12px;
+top: 12px;
+color:#fff;
+
 }
 
 #button:hover {
-  background-color: #e4b3e7;
-  color: #bc7fbf;
+  background-color: #E4B3E7;
+  color: #BC7FBF,
 }
+
 
 footer {
   bottom: 0;
@@ -284,35 +290,57 @@ footer {
   height: 100px;
 }
 
-footer,
-p {
-  padding-bottom: 50px;
+footer, p {
+  padding-bottom: 50px;;
   font-size: 16px;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
   }
-}
-
-@media (max-width: 549px) {
-  .hidden--mobile {
-    display: none !important;
-  }
-
   nav > .fa-bars {
     display: block;
   }
+
 }
 
-@media (min-width: 364px) {
+
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+
+
+@media (min-width: 550px) {
   nav > ul {
     display: flex;
     justify-content: space-evenly;
     padding: 0 0;
   }
-
+  nav > .fa-bars {
+    display: none;
+  }
+}
   nav > ul > li {
     display: inline-block;
     text-decoration: none;
@@ -321,25 +349,7 @@ p {
     border-radius: 25px;
   }
 
-  nav > .fa-bars {
-    display: none;
-  }
-}
 
-#bio img {
-  float: left;
-  width: 40%;
-  height: auto;
-  margin-right: 1rem;
-}
 
-#bio {
-  margin-right: 3rem;
-}
 
-#bio img {
-  float: left;
-  width: 25%;
-  height: auto;
-  margin-right: 1rem;
-}
+
