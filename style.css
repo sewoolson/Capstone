@@ -32,14 +32,14 @@ p, h6 {
 #large {
   font-size: 38px;
   display: block;
-  font-family: 'Archivo wgt:600', sans-serif;
+  font-family: 'Archivo', sans-serif;
   padding: 0 80px;
 }
 
 #subhead {
   font-size: 20px;
   display: block;
-  font-family:'Archivo wgt:400', sans-serif;
+  font-family:'Archivo', sans-serif;;
   color: #BC7FBF;
   padding: 0 80px;
 
@@ -143,9 +143,8 @@ p, h6 {
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-
-
 /*End contact form */
+
 
 /*Start Community user posts */
 .post-container {
@@ -308,7 +307,7 @@ footer, p {
   .hidden--mobile {
     display: none !important;
   }
-
+}
 
 nav > .fa-bars {
   display: none;
@@ -343,7 +342,7 @@ nav > .fa-bars {
     height: auto;
     margin-right: 1rem;
   }
-}
+
 
 @media (min-width: 550px) {
   nav > ul {
@@ -351,7 +350,7 @@ nav > .fa-bars {
     justify-content: space-evenly;
     padding: 0 0;
   }
-
+}
   nav > ul > li {
     display: inline-block;
     text-decoration: none;
@@ -375,5 +374,5 @@ nav > .fa-bars {
     height: auto;
     margin-right: 1rem;
   }
-}
+
 

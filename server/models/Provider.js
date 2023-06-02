@@ -9,17 +9,17 @@ providerName:{
 },
 location:{
   type: String,
-  required: false,
+  required: true,
   validate: /^[A-Za-z ]*$/
 },
 serviceType:{
   type: String,
-  required: false,
+  required: true,
   validate: /^[A-Za-z ]*$/
 },
 userReview:{
   type: String,
-  required: false,
+  required: true,
   validate: /^[A-Za-z ]*$/
 },
 })
