@@ -15,10 +15,9 @@ export default state => html`
   <label for="message">Message:
     <textarea name="message"></textarea>
 </label>
-    <input type="submit" id="button" name="submit" value="Submit"/>
+    <input type="submit" id="button" name="submit" value="submit"/>
 </form>
-  <!-- <input type="submit" id="button" name="submit" value="submit"/>
-</form> -->
+
 <table id="services">
 <tr>
   <th>name</th>
