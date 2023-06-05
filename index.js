@@ -49,7 +49,7 @@ function afterRender(state) {
         .then(response => {
 
           store.Services.services.push(response.data);
-          // router.navigate("/Services");
+          router.navigate("/Services");
         })
         .catch(error => {
           console.log("It puked", error);
