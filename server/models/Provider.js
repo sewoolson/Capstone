@@ -4,7 +4,7 @@ mongoose = require("mongoose");
 let providerSchema = new mongoose.Schema({
 providerName:{
   type: String,
-  required: false,
+  required: true,
   validate: /^[A-Za-z0-9 ]*$/
 },
 location:{
