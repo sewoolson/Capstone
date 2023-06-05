@@ -29,7 +29,7 @@ ${state.services
   .map(service => {
     return `<tr><td>${service.providerName}</td><td>${service.location}</td><td>${
       service.serviceType
-    }</td><td>${service.userReview}</td></tr>`;
+    }</td><td>${service.userReview}</td></tr>`
   })
   .join("")}
 
