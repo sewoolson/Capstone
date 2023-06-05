@@ -3,16 +3,16 @@ import html from "html-literal";
 export default state => html`
 
 <form id="provider">
-  <label for="name">Provider Name:</label>
+  <label for="providerName">Provider Name:</label>
   <input type="text" name="name" id="name" />
 
   <label for="location">Provider Location:</label>
     <input type="text" name="location" id="location" />
 
-  <label for="service">Provider Service Type:</label>
+  <label for="serviceType">Provider Service Type:</label>
     <input type="text" name="service" id="service" />
 
-  <label for="message">Message:
+  <label for="userReview">Review:
     <textarea name="message"></textarea>
 </label>
     <input type="submit" id="button" name="submit" value="submit"/>
