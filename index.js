@@ -36,10 +36,10 @@ function afterRender(state) {
       console.log("Input Element List", inputList);
 
       const requestData = {
-        name: inputList.name.value,
+        providerName: inputList.providerName.value,
         location: inputList.location.value,
-        service: inputList.service.value,
-        message: inputList.message.value
+        serviceType: inputList.serviceType.value,
+        userReview: inputList.userReview.value
 
       };
       console.log("request Body", requestData);
