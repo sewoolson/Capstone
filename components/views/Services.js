@@ -4,16 +4,16 @@ export default state => html`
 
 <form id="provider">
   <label for="providerName">Provider Name:</label>
-  <input type="text" name="name" id="name" />
+  <input type="text" name="providerName" id="providerName" />
 
   <label for="location">Provider Location:</label>
     <input type="text" name="location" id="location" />
 
   <label for="serviceType">Provider Service Type:</label>
-    <input type="text" name="service" id="service" />
+    <input type="text" name="serviceType" id="serviceType" />
 
   <label for="userReview">Review:
-    <textarea name="message"></textarea>
+    <textarea name="userReview"></textarea>
 </label>
     <input type="submit" id="button" name="submit" value="submit"/>
 </form>
